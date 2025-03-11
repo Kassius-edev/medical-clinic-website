@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/37cfae1269.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="header.css" />
+    <title>Clinica | Dr. Willam Kermeson</title>
+  </head>
+  <body>
+    <!--------Header---------------------------------->
+    <header>
+      <nav>
+        <ul>
+          <li><a class="anchor" href="#">Início</a></li>
+          <li><a class="anchor" href="#sobre">Missão</a></li>
+          <li><a href="#unidades">Unidades</a></li>
+          <li><a href="#profissionais">Profissionais</a></li>
+          <li><a href="#consultas">Consultas</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--------Main------------------------------------>
+    <main>
+      <!------Início---------------------------------->
+      <section id="inicio">
+        <div class="container-inicio">
+          <div class="inicio-img">
+            <img src="/img/logo-img.jpg" alt="" />
+          </div>
+          <div class="inicio-texto">
+            <h1>Atendimento Humanizado</h1>
+            <p>Aqui você encontra a <span>saúde que você merece</span>.</p>
+          </div>
+        </div>
+      </section>
+      <!------Sobre----------------------------------->
+      <section id="sobre">
+        <div class="container-sobre">
+          <div class="sobre-img">
+            <img src="/img/nossa-missao-img.avif" alt="" />
+          </div>
+          <div class="sobre-texto">
+            <h2>Nossa Missão</h2>
+            <p>
+              Nossa clínica é um espaço de cuidado integral, onde a saúde do
+              paciente é tratada com excelência técnica e acolhimento
+              humanizado. Buscamos ser referência no atendimento médico,
+              priorizando a escuta ativa, o respeito e a personalização do
+              cuidado para cada indivíduo. Nossa missão é proporcionar um
+              atendimento médico de alta qualidade, baseado na humanização,
+              empatia e ética, garantindo que cada paciente se sinta ouvido,
+              compreendido e cuidado em sua totalidade. Nosso compromisso vai
+              além do tratamento de doenças; buscamos promover bem-estar,
+              prevenção e qualidade de vida.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!------Unidades-------------------------------->
+      <section id="unidades">
+        <div class="container-unidades">
+          <div class="unidades-texto">
+            <h2>Unidades</h2>
+            <div class="unidades-titulo-div">
+              <h3
+                class="unidades-titulo active"
+                onclick="openTab(this, 'betania')"
+              >
+                Betânia
+              </h3>
+
+              <h3 class="unidades-titulo" onclick="openTab(this, 'queimada')">
+                Queimada Nova
+              </h3>
+            </div>
+            <div class="unidades-info info-active" id="betania">
+              <p>
+                <span>Rua Main Road, 143 - Centro</span><br />Localizado em
+                frente à papelaria PapelArte.<br />Inaugurada em 2018, foi a
+                primeira unidade levando atendimento humanizado à população.
+              </p>
+            </div>
+
+            <div class="unidades-info" id="queimada">
+              <p>
+                <span>Rua Laranjeira, 987 - Centro</span><br />Localizado perto
+                da feira pública.<br />Inaugurada em 2021 com o intuíto de
+                oferecer atendimento médico em uma cidade com uma população
+                crescente.
+              </p>
+            </div>
+          </div>
+
+          <div class="unidades-img">
+            <img
+              id="img-betania"
+              class="branch-img img-active"
+              src="/img/branch-img-2.webp"
+              alt=""
+            />
+
+            <img
+              id="img-queimada"
+              class="branch-img"
+              src="/img/branch-img.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!------Profissionais--------------------------->
+      <section id="profissionais">
+        <h2>Nossos Profissionais</h2>
+        <div class="profissionais-container">
+          <div class="row">
+            <div class="profissionais-img">
+              <img src="/img/images.jpeg" alt="" />
+            </div>
+            <div class="profissionais-texto">
+              <h3>
+                <span>Ultrasonografia/Clínico Geral</span><br />Dr. Willam
+                Kermeson
+              </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="profissionais-img">
+              <img src="/img/urologia-img.jpeg" alt="" />
+            </div>
+            <div class="profissionais-texto">
+              <h3><span>Urologia</span><br />Dr. Bruno Medrado</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="profissionais-img">
+              <img src="/img/cardiologia-img.jpeg" alt="" />
+            </div>
+            <div class="profissionais-texto">
+              <h3><span>Cardiologia</span><br />Dr. Marcos Macedo</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="profissionais-img">
+              <img src="/img/ginecologia-img.jpeg" alt="" />
+            </div>
+            <div class="profissionais-texto">
+              <h3><span>Ginecologia</span><br />Dr. Bruna Gomes</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="profissionais-img">
+              <img src="/img/pediatria-img.jpeg" alt="" />
+            </div>
+            <div class="profissionais-texto">
+              <h3><span>Pediatria</span><br />Tio Paulinho</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="profissionais-img">
+              <img src="/img/psiquiatria-img.jpg" alt="" />
+            </div>
+            <div class="profissionais-texto">
+              <h3><span>Psiquiatria</span><br />Dr. Heldo Moura</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="profissionais-img">
+              <img src="/img/nutricionista-img.jpg" alt="" />
+            </div>
+            <div class="profissionais-texto">
+              <h3><span>Nutricionista</span><br />Dr. Mariana Arrais</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="profissionais-img">
+              <img src="/img/psicologia-img.jpg" alt="" />
+            </div>
+            <div class="profissionais-texto">
+              <h3><span>Psicologia</span><br />Amanda Airam</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------Consultas------------------------------->
+      <section id="consultas">
+        <div class="consultas-titulo">
+          <h2>Marcar Consulta</h2>
+        </div>
+
+        <form>
+          <div class="form-div">
+            <!-- Full Name -->
+            <div class="form-nome">
+              <label for="full_name">Nome Completo:</label>
+              <input
+                type="text"
+                id="full_name"
+                placeholder="Nome Completo"
+                required
+              />
+            </div>
+            <div class="form-branch">
+              <label for="branch">Escolha a unidade:</label>
+              <select id="branch" required>
+                <option value="" disabled selected>Escolha a unidade</option>
+                <option value="+5589994692178">Betânia</option>
+                <option value="+5587999795003">Queimada Nova</option>
+              </select>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-phone">
+              <label for="phone">WhatsApp:</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Número do WhatsApp"
+                required
+              />
+            </div>
+
+            <!-- Appointment Date -->
+            <div class="form-data">
+              <label for="appointment_date">Data:</label>
+              <input type="date" id="appointment_date" required />
+            </div>
+
+            <!-- Medical Specialty -->
+            <div class="form-especialidade">
+              <label for="specialty">Especialidade:</label>
+              <select id="specialty" required>
+                <option value="" disabled selected>
+                  Selecione a especialidade
+                </option>
+                <option value="Clínico Geral">Clínico Geral</option>
+                <option value="Pediatria">Pediatria</option>
+                <option value="Ginecologia">Ginecologia</option>
+                <option value="Cardiologia">Cardiologia</option>
+                <option value="Psiquiatria">Psiquiatria</option>
+                <option value="Urologia">Urologia</option>
+                <option value="Psicologia">Psicologia</option>
+                <option value="Nutricionista">Nutricionista</option>
+              </select>
+            </div>
+
+            <!-- Reason for Appointment -->
+            <div class="form-razao">
+              <label for="reason">Razão para a consulta:</label>
+              <textarea
+                id="reason"
+                rows="4"
+                placeholder="Descreva seus sintomas ou razões para a consulta"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-botao">
+              <button type="submit" onclick="sendWhatsApp()">
+                Marcar via WhatsApp
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!--------Footer---------------------------------->
+    <footer>
+      <section id="footer">
+        <div class="footer-main">
+          <div class="left-footer">
+            <h3>Mapa do site</h3>
+            <ul>
+              <li><a class="anchor" href="#">Início</a></li>
+              <li><a class="anchor" href="#sobre">Missão</a></li>
+              <li><a href="#unidades">Unidades</a></li>
+              <li><a href="#profissionais">Profissionais</a></li>
+              <li><a href="#consultas">Consultas</a></li>
+            </ul>
+          </div>
+
+          <div class="right-footer">
+            <h3>Redes Sociais</h3>
+            <ul>
+              <li>
+                <a
+                  class="anchor"
+                  href="https://www.instagram.com/clinicadrwillamkermeson/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <!--mudar link de facebook-->
+                <a
+                  class="anchor"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <!--mudar link de twitter-->
+                <a href="https://www.twitter.com" target="_blank"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <!--mudar link de whatsapp-->
+                <a
+                  href="https://wa.me/5589994692178?text=Olá! Gostaria de marcar uma consulta"
+                  target="_blank"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            Direitos autorais ©2025 Todos os direitos reservados | Desenvolvido
+            por
+            <a href="https://github.com/Kassius-edev" target="_blank"
+              >Wanderson Kassius</a
+            >
+          </p>
+        </div>
+      </section>
+    </footer>
+
+    <script>
+      /*--------OpenTab--------------------------------*/
+
+      let tabTitulos = document.getElementsByClassName("unidades-titulo");
+      let tabInfos = document.getElementsByClassName("unidades-info");
+      let tabImages = document.getElementsByClassName("branch-img");
+      function openTab(element, tabName) {
+        for (tabTitulo of tabTitulos) {
+          tabTitulo.classList.remove("active");
+        }
+        for (tabInfo of tabInfos) {
+          tabInfo.classList.remove("info-active");
+        }
+        for (let tabImage of tabImages) {
+          tabImage.classList.remove("img-active");
+        }
+        element.classList.add("active");
+        document.getElementById(tabName).classList.add("info-active");
+        document.getElementById(`img-${tabName}`).classList.add("img-active");
+      }
+
+      /*--------SendFormWhatsapp-------------------------*/
+      function sendWhatsApp() {
+        // Get form values
+        let name = document.getElementById("full_name").value;
+        let branch = document.getElementById("branch");
+        let branchName = branch.options[branch.selectedIndex].text; // Get branch name
+        let phoneNumber = branch.value; // Get WhatsApp number from value
+        let phone = document.getElementById("phone").value;
+        let dateInput = document.getElementById("appointment_date").value;
+        let [year, month, day] = dateInput.split("-");
+        let formattedDate = `${day}-${month}-${year}`;
+        let specialty = document.getElementById("specialty").value;
+        let reason = document.getElementById("reason").value;
+
+        if (!name || !phoneNumber || !specialty || !reason) {
+          alert("Porfavor preencha os dados.");
+          return;
+        }
+        let message = `Olá, eu gostaria de marcar uma consulta:\n\n *Paciente:* ${name}\n *Telefone:* ${phone}\n *Data:* ${formattedDate}\n *Unidade:* ${branchName}\n *Especialidade:* ${specialty}\n *Motivo:* ${reason}`;
+
+        let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+          message
+        )}`;
+        window.open(whatsappURL, "_blank");
+      }
+    </script>
+  </body>
+</html>
